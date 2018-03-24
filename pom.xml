@@ -45,7 +45,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>com.AgeofClans.App</mainClass>
+              <mainClass>AgeofClans.App</mainClass>
             </manifest>
           </archive>
         </configuration>
