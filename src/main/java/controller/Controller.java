@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class Controller {
 
-	@RequestMapping("/abc")
+    @RequestMapping("/abc")
     String home() {
         return "Hello World!";
     }
