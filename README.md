@@ -1,6 +1,6 @@
 # Clans
 
-[![CircleCI](https://circleci.com/gh/heroku/java-getting-started.svg?style=svg)](https://circleci.com/gh/heroku/java-getting-started)
+
 
 A Clash SpringBoot app to support the services
 
