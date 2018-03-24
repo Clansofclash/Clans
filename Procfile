@@ -1,0 +1,1 @@
+web: java -jar target/Clans-1.0-SNAPSHOT.jar
