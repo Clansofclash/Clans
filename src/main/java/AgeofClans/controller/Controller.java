@@ -21,6 +21,6 @@ public class Controller {
     @RequestMapping("/db")
     String test()
     {
-        return "from controller";
+        return mainDAO.test();
     }
 }
