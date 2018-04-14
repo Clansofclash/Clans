@@ -14,16 +14,16 @@ public class MainDAO {
 
     public String test()
     {
-//        try {
-//            Connection connection = dbConnect.getConnection();
-//            return "Succes";
-//        } catch (URISyntaxException e) {
-//            //e.printStackTrace();
-//            return e.toString();
-//        } catch (SQLException e) {
-//            //e.printStackTrace();
-//            return e.toString();
-//        }
-        return "no joy";
+        try {
+            Connection connection = dbConnect.getConnection();
+            return "Succes";
+        } catch (URISyntaxException e) {
+            //e.printStackTrace();
+            return e.toString();
+        } catch (SQLException e) {
+            //e.printStackTrace();
+            return e.toString();
+        }
+        //return "no joy";
     }
 }

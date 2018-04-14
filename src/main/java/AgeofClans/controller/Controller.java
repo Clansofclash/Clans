@@ -10,8 +10,6 @@ import AgeofClans.dao.MainDAO;
 @EnableAutoConfiguration
 public class Controller {
 
-    //@Autowired
-    MainDAO mainDAO;
 
     @RequestMapping("/abc")
     String home() {
@@ -21,6 +19,7 @@ public class Controller {
     @RequestMapping("/db")
     String test()
     {
+        MainDAO mainDAO = new MainDAO();
         return mainDAO.test();
     }
 }
