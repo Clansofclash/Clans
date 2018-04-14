@@ -26,10 +26,10 @@ public class MainDAO {
             return "Succes";
         } catch (URISyntaxException e) {
 
-            return e.toString();
+            return "Syntax fucked!! "+e.toString();
         } catch (SQLException e) {
 
-            return e.toString();
+            return "SQL Fucked!! "+e.toString();
         }
         //return "no joy";
     }
