@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class MainDAO {
 
-    @Autowired
+    //@Autowired
     DbConnect dbConnect;
 
     public String test()
