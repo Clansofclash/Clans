@@ -9,20 +9,26 @@ import java.sql.SQLException;
 
 public class MainDAO {
 
-    //@Autowired
+
+    DbConnect dbConnect;
+
+    public MainDAO()
+    {
+        this.dbConnect = new DbConnect();
+    }
 
 
     public String test()
     {
-        DbConnect dbConnect = new DbConnect();
+
         try {
             Connection connection = dbConnect.getConnection();
             return "Succes";
         } catch (URISyntaxException e) {
-            //e.printStackTrace();
+
             return e.toString();
         } catch (SQLException e) {
-            //e.printStackTrace();
+
             return e.toString();
         }
         //return "no joy";
