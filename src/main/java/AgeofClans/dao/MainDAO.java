@@ -10,10 +10,11 @@ import java.sql.SQLException;
 public class MainDAO {
 
     //@Autowired
-    DbConnect dbConnect;
+
 
     public String test()
     {
+        DbConnect dbConnect = new DbConnect();
         try {
             Connection connection = dbConnect.getConnection();
             return "Succes";
