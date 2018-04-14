@@ -1,8 +1,7 @@
 package AgeofClans;
 
+import AgeofClans.controller.Controller;
 import org.springframework.boot.SpringApplication;
-
-import controller.Controller;
 
 /**
  * Hello world!
