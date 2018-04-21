@@ -43,7 +43,7 @@ public class MainDAO {
         Statement statement = connection.createStatement();
         try
         {
-            String cmd = "DROP TABLE "+tableName+" IF EXISTS";
+            String cmd = "DROP TABLE "+tableName;//+" IF EXISTS";
             statement.executeUpdate(cmd);
             return "Done";
         }
