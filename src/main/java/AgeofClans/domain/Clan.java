@@ -14,6 +14,15 @@ public class Clan {
     private Integer godID;
     private List<BigInteger>pois;
     private float happiness;
+    private Long trophies;
+
+    public Long getTrophies() {
+        return trophies;
+    }
+
+    public void setTrophies(Long trophies) {
+        this.trophies = trophies;
+    }
 
     public BigInteger getID() {
         return ID;
@@ -95,7 +104,7 @@ public class Clan {
         this.happiness = happiness;
     }
 
-    public Clan(BigInteger ID, String name, List<Long> playerIDs, BigInteger towncenterID, Integer level, double goldAmt, double rateOfGold, Integer godID, List<BigInteger> pois, float happiness) {
+    public Clan(BigInteger ID, String name, List<Long> playerIDs, BigInteger towncenterID, Integer level, double goldAmt, double rateOfGold, Integer godID, List<BigInteger> pois, float happiness, Long trophies) {
         this.ID = ID;
         this.name = name;
         this.playerIDs = playerIDs;
@@ -106,5 +115,6 @@ public class Clan {
         this.godID = godID;
         this.pois = pois;
         this.happiness = happiness;
+        this.trophies = trophies;
     }
 }
