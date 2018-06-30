@@ -10,7 +10,6 @@ public class Clan {
   private double gold;
   private double gold_Reap_Rate;
   private long god_Id;
-  private long poi_Clan_Hybrid_Id;
   private double happiness_Level;
 
 
@@ -74,15 +73,6 @@ public class Clan {
 
   public void setGod_Id(long god_Id) {
     this.god_Id = god_Id;
-  }
-
-
-  public long getPoi_Clan_Hybrid_Id() {
-    return poi_Clan_Hybrid_Id;
-  }
-
-  public void setPoi_Clan_Hybrid_Id(long poi_Clan_Hybrid_Id) {
-    this.poi_Clan_Hybrid_Id = poi_Clan_Hybrid_Id;
   }
 
 
