@@ -1,120 +1,97 @@
 package AgeofClans.domain;
 
-import java.math.BigInteger;
-import java.util.List;
 
 public class Clan {
-    private BigInteger ID;
-    private String name;
-    private List<Long> playerIDs;
-    private BigInteger towncenterID;
-    private Integer level;
-    private double goldAmt;
-    private double rateOfGold;
-    private Integer godID;
-    private List<BigInteger>pois;
-    private float happiness;
-    private Long trophies;
 
-    public Long getTrophies() {
-        return trophies;
-    }
+  private long id;
+  private String name;
+  private long poi_Tc_Id;
+  private long level;
+  private double gold;
+  private double gold_Reap_Rate;
+  private long god_Id;
+  private long poi_Clan_Hybrid_Id;
+  private double happiness_Level;
 
-    public void setTrophies(Long trophies) {
-        this.trophies = trophies;
-    }
 
-    public BigInteger getID() {
-        return ID;
-    }
+  public long getId() {
+    return id;
+  }
 
-    public void setID(BigInteger ID) {
-        this.ID = ID;
-    }
+  public void setId(long id) {
+    this.id = id;
+  }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public List<Long> getPlayerIDs() {
-        return playerIDs;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setPlayerIDs(List<Long> playerIDs) {
-        this.playerIDs = playerIDs;
-    }
 
-    public BigInteger getTowncenterID() {
-        return towncenterID;
-    }
+  public long getPoi_Tc_Id() {
+    return poi_Tc_Id;
+  }
 
-    public void setTowncenterID(BigInteger towncenterID) {
-        this.towncenterID = towncenterID;
-    }
+  public void setPoi_Tc_Id(long poi_Tc_Id) {
+    this.poi_Tc_Id = poi_Tc_Id;
+  }
 
-    public Integer getLevel() {
-        return level;
-    }
 
-    public void setLevel(Integer level) {
-        this.level = level;
-    }
+  public long getLevel() {
+    return level;
+  }
 
-    public double getGoldAmt() {
-        return goldAmt;
-    }
+  public void setLevel(long level) {
+    this.level = level;
+  }
 
-    public void setGoldAmt(double goldAmt) {
-        this.goldAmt = goldAmt;
-    }
 
-    public double getRateOfGold() {
-        return rateOfGold;
-    }
+  public double getGold() {
+    return gold;
+  }
 
-    public void setRateOfGold(double rateOfGold) {
-        this.rateOfGold = rateOfGold;
-    }
+  public void setGold(double gold) {
+    this.gold = gold;
+  }
 
-    public Integer getGodID() {
-        return godID;
-    }
 
-    public void setGodID(Integer godID) {
-        this.godID = godID;
-    }
+  public double getGold_Reap_Rate() {
+    return gold_Reap_Rate;
+  }
 
-    public List<BigInteger> getPois() {
-        return pois;
-    }
+  public void setGold_Reap_Rate(double gold_Reap_Rate) {
+    this.gold_Reap_Rate = gold_Reap_Rate;
+  }
 
-    public void setPois(List<BigInteger> pois) {
-        this.pois = pois;
-    }
 
-    public float getHappiness() {
-        return happiness;
-    }
+  public long getGod_Id() {
+    return god_Id;
+  }
 
-    public void setHappiness(float happiness) {
-        this.happiness = happiness;
-    }
+  public void setGod_Id(long god_Id) {
+    this.god_Id = god_Id;
+  }
 
-    public Clan(BigInteger ID, String name, List<Long> playerIDs, BigInteger towncenterID, Integer level, double goldAmt, double rateOfGold, Integer godID, List<BigInteger> pois, float happiness, Long trophies) {
-        this.ID = ID;
-        this.name = name;
-        this.playerIDs = playerIDs;
-        this.towncenterID = towncenterID;
-        this.level = level;
-        this.goldAmt = goldAmt;
-        this.rateOfGold = rateOfGold;
-        this.godID = godID;
-        this.pois = pois;
-        this.happiness = happiness;
-        this.trophies = trophies;
-    }
+
+  public long getPoi_Clan_Hybrid_Id() {
+    return poi_Clan_Hybrid_Id;
+  }
+
+  public void setPoi_Clan_Hybrid_Id(long poi_Clan_Hybrid_Id) {
+    this.poi_Clan_Hybrid_Id = poi_Clan_Hybrid_Id;
+  }
+
+
+  public double getHappiness_Level() {
+    return happiness_Level;
+  }
+
+  public void setHappiness_Level(double happiness_Level) {
+    this.happiness_Level = happiness_Level;
+  }
+
 }
