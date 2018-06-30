@@ -1,6 +1,7 @@
 package AgeofClans.dao;
 
 import AgeofClans.db.DbConnect;
+import org.apache.http.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.xml.ws.Response;
@@ -12,34 +13,26 @@ import java.sql.Statement;
 public class MainDAO {
 
 
-    DbConnect dbConnect;
-
-    public MainDAO()
+    public static Connection connect()
     {
-        this.dbConnect = new DbConnect();
-    }
-
-
-    public String test()
-    {
-
+        Connection connection = null;
         try {
-            Connection connection = dbConnect.getConnection();
-            return "Succes";
-        } catch (URISyntaxException e) {
-
-            return "Syntax fucked!! "+e.toString();
-        } catch (SQLException e) {
-
-            return "SQL Fucked!! "+e.toString();
+            connection = DbConnect.getConnection();
+            return connection;
         }
-        //return "no joy";
+
+        catch (Exception e)
+        {
+            System.out.println("Error in db conn = "+e);
+            return null;
+        }
+
     }
 
     //TODO replace return types with responses
     public String dropTable(String tableName) throws URISyntaxException, SQLException {
 
-        Connection connection = dbConnect.getConnection();
+        Connection connection = DbConnect.getConnection();
         Statement statement = connection.createStatement();
         try
         {
